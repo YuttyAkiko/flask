@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalhes do Item</title>
+</head>
+<body>
+    <h1>Detalhes do Item</h1>
+    {% if item %}
+        <p>ID: {{ item['id'] }}</p>
+        <p>Nome: {{ item['name'] }}</p>
+    {% else %}
+        <p>Item não encontrado.</p>
+    {% endif %}
+</body>
+</html>
